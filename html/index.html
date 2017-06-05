@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>Plange.matdot.de</title>
+        <link rel="stylesheet" href="css\default.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Paddy's Website</h1>
+
+            <nav>
+                <ul>
+                    <li id="selected">Index</li>
+                    <li class="notAvailable">Game</li>
+                    <li class="notAvailable">Blog</li>
+                    <li><a href="js-experimente/index.html">JavaScript Expermente</a></li>
+                    <li class="notAvailable">Impressum</li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            <h2>Navigation</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Registrierung</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2>Das ist meine Startseite!</h2>
+            
+            <p>
+                Diese Seite wurde als Dummy mit Hilfe des wenig ertragreichen HTML-Tutorial von SelfHTML erstellt.
+            </p>
+
+            <form action="login.php" method="POST">
+                <label for="name">Benutzernamen</label>
+                <input type="text" name="name" id="name" placeholder="Benutzernamen" required>
+                <label for="password">Passwort</label>
+                <input type="password" name="password" id="password" placeholder="Passwort" required>
+                <input type="submit" value="Einloggen">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2017 Patrick Lange</p>
+        </footer>
+    </body>
+</html>

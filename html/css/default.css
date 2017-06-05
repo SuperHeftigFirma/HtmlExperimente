@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    /*outline: 1px solid #404040;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Header */
+header {
+    background-color: #768c5b;
+    padding: 0em;
+    flex: 1 100%;
+}
+
+header h1 {
+    font-size: 3.5em;
+    padding: 0.5em;
+}
+
+header nav {
+
+}
+
+header ul {
+    background-color: black;
+    padding: 0;
+    list-style-position: inside;
+    overflow: hidden;
+}
+
+header li {
+    padding: 0;
+    display: inline;
+}
+
+header li a {
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    float: left;
+}
+
+header li a:visited {
+    color: white;
+}
+
+header li a:active {
+    background-color: #e2e2e2;
+}
+
+header li a:hover {
+    background-color: white;
+    color: black;
+}
+
+header ul #selected {
+    background-color: #768c5b;
+    color: black;
+    float: left;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+header ul .notAvailable {
+    background-color: #848484;
+    color: #d1d1d1;
+    float: left;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+/* Aside */
+
+aside {
+    background-color: black;
+    padding: 0 0 1em 0;
+    flex: 1 1 max-content;
+}
+
+aside h2 {
+    font-size: 1.5em;
+    color: white;
+    padding: 1em;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul #selected {
+    background-color: #474747;
+    color: white;
+    padding: 0.5em;
+    display: block;
+}
+
+aside li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+}
+
+aside li a:visited {
+    color: white;
+}
+
+aside li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main */
+
+main {
+    flex: 2 5 0%;
+}
+
+main h2 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+main form {
+    padding: 2em;
+    width: 20em;
+    margin: auto;
+}
+
+main form label {
+    display: block;
+    text-align: center;
+}
+
+main form input {
+    display: block;
+    margin: auto auto 0.8em auto;
+}
+
+main #squarecicle {
+    text-align: center;
+    height: 50px;
+    width: 150px;
+    display: block;
+    background-color: #931111;
+    color: white;
+    margin: 1em auto auto auto;
+    transition: font-size 1s, border-radius 1s, transform 1s, background-color 1s, color 1s, width 1s;
+}
+
+main #squarecicle:hover {
+    border-radius: 25px;
+    width: 50px;
+    transform: rotate(360deg);
+    background-color: #119092;
+    color: #119092;
+    font-size: 1px;
+}
+
+/* Footer */
+
+footer {
+    flex: 1 100%;
+    padding: 0.2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

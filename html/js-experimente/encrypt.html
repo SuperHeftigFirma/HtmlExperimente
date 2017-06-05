@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plange.matdot.de</title>
+    <link rel="stylesheet" href="..\css\default.css" type="text/css">
+    <link rel="stylesheet" href="..\css\crypto.css" type="text/css"> 
+</head>
+
+<body>
+    <header>
+        <h1>Paddy's Website</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Index</a></li>
+                <li class="notAvailable">Game</li>
+                <li class="notAvailable">Blog</li>
+                <li id="selected">JavaScript Expermente</li>
+                <li class="notAvailable">Impressum</li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <h2>Navigation</h2>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li id="selected">Crypto</li>
+                <li><a href="register.php">Registrierung</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h2>Crypto</h2>
+        <label for="decrypted">Unversschlüsselter Text:</label>
+        <textarea name="decrypted" id="decrypted" rows="5" cols="120"></textarea>
+        <label for="encrypted">Verschlüsselter Text:</label>
+        <textarea name="encrypted" id="encrypted" rows="5" cols="120"></textarea>
+        <button class="testbutton" id="encrypt">Verschlüssele</button>
+        <input type="text" placeholder="Shiftlänge" id="shift">
+        <input type="text" placeholder="Key" id="key">
+        <button class="testbutton" id="decrypt">Entschlüssele</button>
+        <input type="radio" name="selection" value="caesar" checked="true">Caesar
+        <input type="radio" name="selection" value="cypher">Cypher
+    </main>
+    <footer>
+        <p>&copy; 2017 Patrick Lange</p>
+    </footer>
+    <script src='../js/encrypt.js'></script>
+</body>
+
+</html>
